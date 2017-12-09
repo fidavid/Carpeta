@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 16</title>
+	</head>
+	<body>
+		<h1>Ejercicio 16</h1>
+		<script type="text/javascript">
+			var alumnos = parseInt(prompt("Ingrese cantidad de alumnos:"));
+			var cont = 0;
+
+			for (var i = 0; i < alumnos; i++) {
+				var dni = parseInt(prompt("Ingrese el DNI del alumno/a"));
+
+				if (dni > 42000000) {
+					cont++
+				}
+			}
+
+			alert("En la escuela hay "+cont+" alumno/s que tienen un numero de DNI inferior a los 42000000")
+		</script>
+	</body>
+</html>

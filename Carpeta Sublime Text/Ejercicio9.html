@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 9</title>
+	</head>
+	<body>
+		<h1>Ejercicio 9</h1>
+		<br>
+		<input type="number" name="numero_1" id="numero_1" placeholder="Numero 1">
+		<br>
+		<input type="number" name="numero_2" id="numero_2" placeholder="Numero 2">
+		<br>
+		<input type="number" name="numero_3" id="numero_3" placeholder="Numero 3">
+		<br>
+		<button id="boton" name="boton" type="button" onclick="calcular()">Calcular</button>
+		<br/>
+		<input type="text" name="resultado" id="resultado" readonly=""/>
+
+		<script>
+			function calcular () {
+				var a = parseInt(document.getElementById("numero_1").value);
+				var b = parseInt(document.getElementById("numero_2").value);
+				var c = parseInt(document.getElementById("numero_3").value);
+
+				var pro = (a + b + c) / 3;
+
+				if (pro >= 6) {
+					document.getElementById("resultado").value = "El alumno esta Aprovado"
+				} else {
+					document.getElementById("resultado").value = "El alumno esta Desaprovado"
+				}
+			}
+		</script>
+	</body>
+</html>

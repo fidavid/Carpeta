@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>Ejercicio 26</title>
+	</head>
+	<body>
+		<h1>Ejercicio 26</h1>
+		<script type="text/javascript">
+			var nc = parseInt(prompt("Ingrese cantidad de numeros que desea ingresar:"));
+			var suma = 0;
+
+			for (var i = 0; i < nc; i++) {
+				var n = parseInt(prompt("Ingrese un numero:"))
+
+				if (n % 2 == 0) {
+					suma = suma + n
+				} else {
+					alert("El numero ingresado es impar.")
+					i--;
+				}
+			}
+
+			alert("La suma de los numeros pares ingresados es: "+suma)
+		</script>
+	</body>
+</html>

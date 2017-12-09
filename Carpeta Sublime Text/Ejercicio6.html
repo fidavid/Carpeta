@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 6</title>
+	</head>
+	<body>
+		<h1>Ejercicio 6</h1>
+		<br>
+		<input type="number" name="numero_1" id="numero_1" placeholder="Numero 1">
+		<br>
+		<input type="number" name="numero_2" id="numero_2" placeholder="Numero 2">
+		<br>
+		<button id="boton" name="boton" type="button" onclick="calcular()">Calcular</button>
+		<br/>
+		<input type="text" name="resultado" id="resultado" readonly="" placeholder="El mayor es:" />
+
+		<script>
+			function calcular () {
+				var a = parseInt(document.getElementById("numero_1").value);
+				var b = parseInt(document.getElementById("numero_2").value);
+
+				if (a > b) {					
+					document.getElementById("resultado").value = a - b;
+				} else {
+					document.getElementById("resultado").value = b - a;
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 4</title>
+	</head>
+	<body>
+		<h1>Ejercicio 4</h1>
+		<br>
+		<input type="number" name="numero_1" id="numero_1" placeholder="Numero 1">
+		<br>
+		<input type="number" name="numero_2" id="numero_2" placeholder="Numero 2">
+		<br>
+		<input type="number" name="numero_3" id="numero_3" placeholder="Numero 3">
+		<br>
+		<input type="number" name="numero_4" id="numero_4" placeholder="Numero 4">
+		<br>
+		<button id="boton" name="boton" type="button" onclick="calcular()">Calcular</button>
+		<br/>
+		<input type="text" name="resultado" id="resultado" readonly="" placeholder="Resultado" />
+
+		<script>
+			function calcular () {
+				var a = parseInt(document.getElementById("numero_1").value);
+				var b = parseInt(document.getElementById("numero_2").value);
+				var c = parseInt(document.getElementById("numero_3").value);
+				var d = parseInt(document.getElementById("numero_4").value);
+				var suma = (a + b) - (c + d);
+				document.getElementById("resultado").value = suma;
+			}
+		</script>
+	</body>
+</html>

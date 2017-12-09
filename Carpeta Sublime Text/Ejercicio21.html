@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 21</title>
+	</head>
+	<body>
+		<h1>Ejercicio 21</h1>
+		<script type="text/javascript">
+			var alums = parseInt(prompt("Ingresar cantidad de alumnos de la escuela:"));
+			var cont = 0;
+			var i = 0;
+
+			while (i < alums) {
+				var t = prompt("Ingrese el turno del alumno/a:");
+				var s = prompt("Ingrese el sexo del alumno/a:")
+
+				if (t == "mañana") {
+					if (s == "femenino") {
+						cont++
+					}
+				}
+
+				i++
+			}
+
+			alert("En la escuela hay "+cont+" alumnas mujeres en el turno mañana.")
+		</script>
+	</body>
+</html>

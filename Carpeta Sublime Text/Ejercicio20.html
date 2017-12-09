@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 20</title>
+	</head>
+	<body>
+		<h1>Ejercicio 20</h1>
+		<script type="text/javascript">
+			var menor = parseInt(prompt("Ingrese un numero:"));
+			var cont = 1;
+
+			for (var i = 0; i < 5; i++) {
+				var num = parseInt(prompt("Ingrese un numero:"));
+
+				if (num == menor) {
+					cont++
+				}
+
+				if (num < menor) {
+					menor = num;
+				}
+			}
+
+			alert("El menor numero es "+menor+" y se repitio "+cont+" veces.");
+		</script>
+	</body>
+</html>

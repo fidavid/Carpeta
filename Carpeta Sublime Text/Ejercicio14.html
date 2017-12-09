@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 14</title>
+	</head>
+	<body>
+		<h1>Ejercicio 14</h1>
+		<script type="text/javascript">
+			var alum = parseInt(prompt("Ingrese cantidad de alumnos en el curso:"));
+			var cont = 0;
+			var aprobados = 0;
+
+			while (cont < alum) {
+				var promedio = parseInt(prompt("Ingrese prodeio del alumno:"));
+
+				if (promedio >= 6) {
+					aprobados++
+				}
+				cont++
+			}
+
+			alert("Aprobaron "+aprobados+" alumnos.")
+		</script>
+	</body>
+</html>

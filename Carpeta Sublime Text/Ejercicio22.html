@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 22</title>
+	</head>
+	<body>
+		<h1>Ejercicio 22</h1>
+		<script type="text/javascript">
+			var notas = parseInt(prompt("Ingrese cantidad de notas del alumno:"))
+			var suma = 0;
+
+			for (var i = 0; i < notas; i++) {
+				var n1 = parseInt(prompt("Ingrese notas del alumno:"))
+
+				suma = suma + n1;
+			}
+
+			var promedio = suma / notas;
+
+			alert("El promedio del alumno es "+promedio);
+		</script>
+	</body>
+</html>

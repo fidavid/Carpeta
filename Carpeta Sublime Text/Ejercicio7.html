@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 7</title>
+	</head>
+	<body>
+		<h1>Ejercicio 7</h1>
+		<br>
+		<input type="number" name="numero_1" id="numero_1" placeholder="Numero 1">
+		<br>
+		<input type="number" name="numero_2" id="numero_2" placeholder="Numero 2">
+		<br>
+		<input type="number" name="numero_3" id="numero_3" placeholder="Numero 3">
+		<br>
+		<button id="boton" name="boton" type="button" onclick="calcular()">Calcular</button>
+		<br/>
+		<input type="text" name="resultado" id="resultado" readonly="" placeholder="El mayor es:" />
+
+		<script>
+			function calcular () {
+				var a = parseInt(document.getElementById("numero_1").value);
+				var b = parseInt(document.getElementById("numero_2").value);
+				var c = parseInt(document.getElementById("numero_3").value);
+
+				if (a == b || b == c || c == a) {					
+					alert("Todos los numeros tiene que ser distintos")
+				} else if (a > b && a > c) {
+					document.getElementById("resultado").value = a
+				} else if (b > a && b > c) {
+					document.getElementById("resultado").value = b
+				} else {
+					document.getElementById("resultado").value = c
+				}
+			}
+		</script>
+	</body>
+</html>

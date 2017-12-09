@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var alum = parseInt(prompt("Ingrese cantidad de alumnos:"))
+			var cont = 0;
+			var aprobado = 0,
+				desaprobado = 0,
+				aplazado = 0;
+
+			while (cont < alum) {
+				var promedio = parseInt(prompt("Ingrese promedio del alumno:"));
+
+				if (promedio >= 6) {
+					aprobado++;
+				} else {
+					if (promedio < 4) {
+						aplazado++;
+					} else {
+						desaprobado++;
+					}
+				}
+				cont++;
+			}
+
+			alert("Entre los "+alum+" alumnos hubo: "+aprobado+" alumno/s aprobado/s, "+desaprobado+" alumno/s desaprobad/o y "+aplazado+" alumno/s aplazado/s")
+		</script>
+	</body>
+</html>
